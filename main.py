@@ -14,9 +14,11 @@ Bot = Client(
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 
 START_TEXT = """Hello {},
-I am an under 5MB media or file to telegra.ph link uploader bot.
+I am Akira Telegraph Uploader Bot !
 
-Made by @FayasNoushad"""
+I can help you to make telegra.ph links of the imag you sent in my PM.
+
+"""
 
 HELP_TEXT = """**About Me**
 
@@ -24,14 +26,13 @@ HELP_TEXT = """**About Me**
 - Then I will download it
 - I will then upload it to the telegra.ph link
 
-Made by @FayasNoushad"""
+Follow [Akira News](https://telegram.dog/Akira_News) to be updated !"""
 
 ABOUT_TEXT = """**About Me**
 
-- **Bot :** `Telegraph Uploader`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-- **Source :** [Click here](https://github.com/FayasNoushad/Telegraph-Uploader-Bot)
+- **Bot :** `AkiraTelegraph Uploader`
+- **Creator :** [Noob Akhil](https://telegram.me/AKH1LS)
+- **Channel :** [JOIN](https://telegram.me/Akira_News)
 - **Language :** [Python3](https://python.org)
 - **Library :** [Pyrogram](https://pyrogram.org)"""
 
@@ -58,8 +59,8 @@ HELP_BUTTONS = InlineKeyboardMarkup(
 ABOUT_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-            InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+            InlineKeyboardButton('Channel', url='https://telegram.me/Akira_News'),
+            InlineKeyboardButton('Support', url='https://telegram.me/Akira_Updates')
         ],
         [
             InlineKeyboardButton('Home', callback_data='home'),
@@ -141,15 +142,15 @@ async def getmedia(bot, update):
         )
         return
     
-    text=f"**Link :-** `https://telegra.ph{response[0]}`\n\n**Join :-** @FayasNoushad"
+    text=f"**Link :-** `https://telegra.ph{response[0]}`\n\n**Join :-** @Akira_Support for any query !"
     reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{response[0]}"),
-                InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
+                InlineKeyboardButton(text="get the telegra.ph link", url=f"https://telegra.ph{response[0]}"),
+                InlineKeyboardButton(text="share the telegra.ph link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
             ],
             [
-                InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/FayasNoushad")
+                InlineKeyboardButton(text="Creator", url="https://telegram.me/AKH1LS")
             ]
         ]
     )

@@ -60,7 +60,7 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton('Channel', url='https://telegram.me/Akira_News'),
-            InlineKeyboardButton('Support', url='https://telegram.me/Akira_Updates')
+            InlineKeyboardButton('Support', url='https://telegram.me/Akira_Support')
         ],
         [
             InlineKeyboardButton('Home', callback_data='home'),

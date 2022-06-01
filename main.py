@@ -16,21 +16,21 @@ DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 START_TEXT = """Hello {},
 I am Akira Telegraph Uploader Bot !
 
-I can help you to make telegra.ph links of the imag you sent in my PM.
+I can help you to make telegra.ph links of the image you sent in my PM.
 
 """
 
 HELP_TEXT = """**About Me**
 
-- Just give me a media under 5MB
-- Then I will download it
-- I will then upload it to the telegra.ph link
+• Give me a media.
+• After that, I will download it to my [server](https://telegram.me/Akira_News).
+• I will then upload it to the telegraph.
 
 Follow [Akira News](https://telegram.dog/Akira_News) to be updated !"""
 
 ABOUT_TEXT = """**About Me**
 
-- **Bot :** `AkiraTelegraph Uploader`
+- **Bot :** `Akira Telegraph Uploader`
 - **Creator :** [Noob Akhil](https://telegram.me/AKH1LS)
 - **Channel :** [JOIN](https://telegram.me/Akira_News)
 - **Language :** [Python3](https://python.org)
@@ -146,8 +146,8 @@ async def getmedia(bot, update):
     reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="get the telegra.ph link", url=f"https://telegra.ph{response[0]}"),
-                InlineKeyboardButton(text="share the telegra.ph link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
+                InlineKeyboardButton(text="✓ get the telegra.ph link", url=f"https://telegra.ph{response[0]}"),
+                InlineKeyboardButton(text="✓ share the telegra.ph link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
             ],
             [
                 InlineKeyboardButton(text="Creator", url="https://telegram.me/AKH1LS")

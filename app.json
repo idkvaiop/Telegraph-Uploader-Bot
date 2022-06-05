@@ -1,7 +1,7 @@
 {
   "logo":"",
   "name": "telegraph",
-  "description": "Tagger bot for telegram Groups.",
+  "description": "JAANA LAWDE.",
   "env": {
     "BOT_TOKEN": {
       "description": "Enter bot token. Get it From @botfather.",
